@@ -26,7 +26,7 @@
 </head>
 <!-- Da espacio entre div-->
 <link rel="stylesheet" href="{{asset('css/letras.css')}}">
-<body style="background-color:#84BCF8">
+<body style="background-color:#5EDAE2">
     @yield('content')
 
 

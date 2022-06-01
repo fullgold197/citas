@@ -1,7 +1,11 @@
 {{--  Vista del login  --}}
 @extends('layouts.auth')
 @section('content')
+<<<<<<< HEAD
     <title>Citas médicas</title>
+=======
+    <title>Sistema web</title>
+>>>>>>> origin/main
     <div class="container">
         <div class="row d-flex justify-content-center ">
         <div class="col-md-4"  style="margin:70px;align=center">
@@ -18,7 +22,7 @@
                         Iniciar Sesión
                     </div>
 
-                    <div id="azul">
+                    <div id="azul" class="text-center">
                         Por favor, ingrese los datos solicitados
                     </div>
                 </div>
@@ -27,7 +31,6 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
                         {{-- Codigo de egresado--}}
                         <div id="azul">
                             Correo
@@ -79,7 +82,7 @@
                 </div>
             </div>
 
-            <div id="espacio" align="center" >
+            <div id="espacio" align="center">
             <div id="col-md-10">
             <a target="_blank" href="https://web.facebook.com/minsaperu">
                 <img src="{{asset('images/facebook.png')}}" class="img-fluid" width="40px" alt="facebook minsa">
