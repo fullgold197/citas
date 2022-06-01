@@ -1,11 +1,13 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('content')
+<title>Restablecer contraseña</title>
+
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-4" style="margin:70px;align=center">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                <div class="card-header" id="amarillo">{{ __('Reestablecer contraseña') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -15,12 +17,15 @@
                     @endif
 
                     <form method="POST" action="{{ route('password.email') }}">
+
                         @csrf
+                        <div id="azul">
+                            Dirección email
+                        </div>
+                        <div class="form-group row" id="">
+                            {{--  <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Direccion email') }}</label>  --}}
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -31,10 +36,10 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
+                        <div class="form-group row mb-0" id="" align="center">
+                            <div class="col-md-8 offset-md-2">
+                                <button type="submit" class="btn btn-primary" style="background-color: #004A98;">
+                                    {{ __('Enviar link al correo') }}
                                 </button>
                             </div>
                         </div>
@@ -44,4 +49,5 @@
         </div>
     </div>
 </div>
+
 @endsection
