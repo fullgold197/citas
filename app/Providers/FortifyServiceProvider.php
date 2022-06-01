@@ -58,7 +58,7 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         Fortify::requestPasswordResetLinkView(function () {
-            return view('auth.forgot-password');
+            return view('auth.passwords.email');
         });
 
         Fortify::resetPasswordView(function ($request) {
@@ -67,6 +67,34 @@ class FortifyServiceProvider extends ServiceProvider
 
         Fortify::verifyEmailView(function () {
             return view('auth.verify-email');
+        });
+
+        Fortify::authenticateUsing(function (Request $request) {
+            /* $rol=User::where('role_as', $request->role_as)->first(); */
+
+                    $user = User::where('dni', $request->egresado_matricula)
+                    ->orWhere('email', $request->egresado_matricula)
+                    ->first();
+                if (
+                    $user &&
+                    Hash::check($request->password, $user->password)
+                )
+                 {
+                    return $user;
+                }
+
+
+
+
+        });
+
+
+        RateLimiter::for('login', function (Request $request) {
+            return Limit::perMinute(5)->by($request->email.$request->ip());
+        });
+
+        RateLimiter::for('two-factor', function (Request $request) {
+            return Limit::perMinute(5)->by($request->session()->get('login.id'));
         });
     }
 }

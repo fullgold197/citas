@@ -1,15 +1,16 @@
 {{--  Vista del login  --}}
 @extends('layouts.auth')
 @section('content')
-    <title>Sistema web</title>
+
+    <title>Citas médicas</title>
+
     <div class="container">
         <div class="row d-flex justify-content-center ">
         <div class="col-md-4"  style="margin:70px;align=center">
             <div class="card">
                 <div class="card-header">
-                    <div id="" align="center">
-                        {{-- <i class="fas fa-user-graduate" id="azul"></i> --}}
-                        <h5 id="azul" style="margin-top:20px;">SISTEMA WEB DE GESTION DE CITAS</h5>
+                       {{--  <i class="fas fa-user-graduate" id="azul"></i></i> --}}
+                        <h5 id="azul">SISTEMA WEB DE GESTIÓN DE CITAS</h5>
                     </div>
                     <div id="amarillo" align="center">
                         Iniciar Sesión
@@ -26,7 +27,7 @@
                         @csrf
                         {{-- Codigo de egresado--}}
                         <div id="azul">
-                            Usuario
+                            Correo
                         </div>
                         <div class="form-group row">
 
@@ -77,14 +78,14 @@
 
             <div id="espacio" align="center">
             <div id="col-md-10">
-            <a target="_blank" href="https://www.facebook.com/untelsperu">
-                <img src="{{asset('images/facebook.png')}}" class="img-fluid" width="40px" alt="facebook untelss">
+            <a target="_blank" href="https://web.facebook.com/minsaperu">
+                <img src="{{asset('images/facebook.png')}}" class="img-fluid" width="40px" alt="facebook minsa">
             </a>
-            <a target="_blank" href="https://www.instagram.com/untelsoficial">
-                <img src="{{asset('images/instagram.png')}}" class="img-fluid" width="40px" alt="instagram untels">
+            <a target="_blank" href="https://www.instagram.com/minsa_peru">
+                <img src="{{asset('images/instagram.png')}}" class="img-fluid" width="40px" alt="instagram minsa">
             </a>
-            <a target="_blank" href="https://www.youtube.com/c/UniversidadNacionalTecnológicadeLimaSur">
-                <img src="{{asset('images/youtube.png')}}" class="img-fluid" width="40px" alt="youtube untels">
+            <a target="_blank" href="https://www.youtube.com/channel/UCpR7spJxkXzqAI9aBr7Xacw">
+                <img src="{{asset('images/youtube.png')}}" class="img-fluid" width="40px" alt="youtube minsa">
             </a>
 
             </div>
