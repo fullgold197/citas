@@ -1,21 +1,21 @@
 {{--  Vista del login  --}}
 @extends('layouts.auth')
 @section('content')
-    <title>SSE-Untels</title>
+    <title>Sistema web</title>
     <div class="container">
         <div class="row d-flex justify-content-center ">
         <div class="col-md-4"  style="margin:70px;align=center">
             <div class="card">
                 <div class="card-header">
                     <div id="" align="center">
-                        <i class="fas fa-user-graduate" id="azul"></i></i>
-                        <h5 id="azul">SISTEMA DE SEGUIMIENTO DE EGRESADOS UNTELS</h5>
+                        {{-- <i class="fas fa-user-graduate" id="azul"></i> --}}
+                        <h5 id="azul" style="margin-top:20px;">SISTEMA WEB DE GESTION DE CITAS</h5>
                     </div>
                     <div id="amarillo" align="center">
                         Iniciar Sesión
                     </div>
 
-                    <div id="azul">
+                    <div id="azul" class="text-center">
                         Por favor, ingrese los datos solicitados
                     </div>
                 </div>
@@ -24,7 +24,6 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
                         {{-- Codigo de egresado--}}
                         <div id="azul">
                             Usuario
@@ -76,7 +75,7 @@
                 </div>
             </div>
 
-            <div id="espacio" align="center" >
+            <div id="espacio" align="center">
             <div id="col-md-10">
             <a target="_blank" href="https://www.facebook.com/untelsperu">
                 <img src="{{asset('images/facebook.png')}}" class="img-fluid" width="40px" alt="facebook untelss">
