@@ -17,7 +17,7 @@ return new class extends Migration
             $table->engine = 'InnoDB';
             $table->id('especialidades_id');
             $table->string('nombre',80);
-            $table->text('descripcion');
+            $table->text('descripcion')->nullable();
             $table->enum('estado', ['Habilitado', 'Deshabilitado']);
 
             $table->timestamps();

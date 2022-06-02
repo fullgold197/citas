@@ -16,13 +16,8 @@ return new class extends Migration
         Schema::create('medicos', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->id('medicos_id');
-            $table->string('nombres',45);
-            $table->string('apellidos',45);
-            $table->char('dni',8)->unique()->nullable();
-            $table->string('direccion',250);
-            $table->integer('telefono');
-            $table->string('contrasena',50);
-            $table->enum('estado', ['Habilitado', 'Deshabilitado']);
+            $table->string('nro_colegiatura',45)->unique();
+            $table->integer('tel_consultorio')->nullable();
             $table->timestamps();
         });
     }
