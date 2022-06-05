@@ -5,11 +5,14 @@
     <title>Citas médicas</title>
 
     <div class="container">
-        <div class="row d-flex justify-content-center ">
+        <div class="row d-flex justify-content-center">
         <div class="col-md-4"  style="margin:70px;align=center">
             <div class="card">
-                <div class="card-header">
-                       {{--  <i class="fas fa-user-graduate" id="azul"></i></i> --}}
+                <div class="card-header" >
+                    <div id="" align="left"> 
+                        <img src="{{asset('images/minsa.png')}}" class="img-fluid" width="180px" alt="minedu">
+                    </div>
+                    <div align="center">
                         <h5 id="azul">SISTEMA WEB DE GESTIÓN DE CITAS</h5>
                     </div>
                     <div id="amarillo" align="center">
