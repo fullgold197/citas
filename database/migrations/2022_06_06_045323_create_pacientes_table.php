@@ -13,15 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+        Schema::create('pacientes', function (Blueprint $table) {
+            $table->id('pacientes_id');
+            $table->string('nro_historia',45)->unique();
             $table->timestamps();
-
-
         });
     }
 
@@ -33,7 +28,7 @@ return new class extends Migration
     public function down()
     {
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('pacientes');
         Schema::enableForeignKeyConstraints();
     }
 };
