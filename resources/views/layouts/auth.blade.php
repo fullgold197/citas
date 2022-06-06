@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Imagen del title -->
-    <link rel="shortcut icon" href="{{asset('images/untels/untels.png')}}">
+    <link rel="shortcut icon" href="{{asset('images/minsa_icon.jpg')}}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -26,10 +26,8 @@
 </head>
 <!-- Da espacio entre div-->
 <link rel="stylesheet" href="{{asset('css/letras.css')}}">
-<body style="background-color:#5EDAE2">
+<body style="background: -webkit-gradient(linear, left top, left bottom, from(rgb(120, 193, 226)), to(#004A98)) fixed">
     @yield('content')
-
-
 </body>
 
 
