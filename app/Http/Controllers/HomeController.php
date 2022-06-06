@@ -30,7 +30,7 @@ class HomeController extends Controller
             return redirect('/admin');
 
         } else if (Auth::user()->roles_id == '1' /* and Auth::user()->estado =='1' */) {
-            return view('users.home');
+            return view('users.dashboard_paciente');
         }
         else{
             return redirect('/login');
