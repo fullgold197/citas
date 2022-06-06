@@ -28,7 +28,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-                        {{-- Codigo de egresado--}}
+                        {{-- Correo--}}
                         <div id="azul">
                             Correo
                         </div>
@@ -67,7 +67,17 @@
                                 </button>
 
                             </div>
+                            
                         </div>
+                        <div class="form-group row mb-0" id="espacio" align="center">
+                            
+                            <div class="col-md-8 offset-md-2" >
+                                <button type="button" class="btn btn-primary btn" data-bs-toggle="modal" data-bs-target="#modal-academico-create" style="background-color: rgb(61, 201, 48)">
+                                    {{ __('Crear cuenta') }}
+                                </button>
+                            </div>
+                        </div>
+
                         <div id="" align="center">
                             @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}" id="azul">
