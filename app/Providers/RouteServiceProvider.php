@@ -7,7 +7,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 class RouteServiceProvider extends ServiceProvider
 {
     /**
@@ -17,8 +17,18 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
-
+    //public const HOME = '/home';
+    protected function authenticated()
+    {
+        if(Auth::user()->role_as == '1') //1 = Admin Login
+        {
+            return redirect('/admin')->with('status','Welcome to your dashboard');
+        }
+        elseif(Auth::user()->role_as == '0') // Normal or Default User Login
+        {
+            return redirect('/home')->with('status','Logged in successfully');
+        }
+    }
     /**
      * The controller namespace for the application.
      *
@@ -46,6 +56,10 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
+
+            Route::middleware('web','auth') //solo se ve esta ruta si estas autenticado
+                ->namespace($this->namespace)
+                ->group(base_path('routes/admin.php')); //define las rutas de admin.php
         });
     }
 
