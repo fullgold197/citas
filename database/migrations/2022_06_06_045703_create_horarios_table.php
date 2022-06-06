@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('medicos', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-            $table->id('medicos_id');
-            $table->string('nro_colegiatura',45)->unique();
-            $table->integer('tel_consultorio')->nullable();
+        Schema::create('horarios', function (Blueprint $table) {
+            $table->id('horarios_id');
+            $table->string('rango_horario',45);
+            $table->date('fecha_programacion');
             $table->timestamps();
+
+
         });
     }
 
@@ -30,8 +31,7 @@ return new class extends Migration
     public function down()
     {
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('medicos');
-
+        Schema::dropIfExists('horarios');
         Schema::enableForeignKeyConstraints();
     }
 };
