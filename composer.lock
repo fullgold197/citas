@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d1f039e43d3a31f18997dd04783653f",
+    "content-hash": "32ed1fa93f7f2a001d9339a132b889c5",
     "packages": [
+        {
+            "name": "almasaeed2010/adminlte",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ColorlibHQ/AdminLTE.git",
+                "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/bd4d9c72931f1dd28601b6bfb387554a381ad540",
+                "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colorlib"
+                }
+            ],
+            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 4",
+            "homepage": "https://adminlte.io/",
+            "keywords": [
+                "JS",
+                "admin",
+                "back-end",
+                "css",
+                "less",
+                "responsive",
+                "template",
+                "theme",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/ColorlibHQ/AdminLTE/issues",
+                "source": "https://github.com/ColorlibHQ/AdminLTE/tree/v3.2.0"
+            },
+            "time": "2022-02-07T20:33:09+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.1.1",
@@ -1128,6 +1171,175 @@
                 }
             ],
             "time": "2022-03-20T21:55:58+00:00"
+        },
+        {
+            "name": "infyomlabs/laravel-generator-helpers",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfyOmLabs/laravel-generator-helpers.git",
+                "reference": "89a83f334a8cfa16bbbad2c60218c9e66536cf9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfyOmLabs/laravel-generator-helpers/zipball/89a83f334a8cfa16bbbad2c60218c9e66536cf9a",
+                "reference": "89a83f334a8cfa16bbbad2c60218c9e66536cf9a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^9.0",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "InfyOm\\GeneratorHelpers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitul Golakiya",
+                    "email": "me@mitul.me"
+                }
+            ],
+            "description": "Helper functions for laravel generator packages",
+            "support": {
+                "issues": "https://github.com/InfyOmLabs/laravel-generator-helpers/issues",
+                "source": "https://github.com/InfyOmLabs/laravel-generator-helpers/tree/v4.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/infyomlabs",
+                    "type": "opencollective"
+                }
+            ],
+            "time": "2022-02-22T10:02:37+00:00"
+        },
+        {
+            "name": "infyomlabs/laravel-ui-adminlte",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfyOmLabs/laravel-ui-adminlte.git",
+                "reference": "e3729756251569804dd1d4fff13880fdddf844b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfyOmLabs/laravel-ui-adminlte/zipball/e3729756251569804dd1d4fff13880fdddf844b0",
+                "reference": "e3729756251569804dd1d4fff13880fdddf844b0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^9.0",
+                "infyomlabs/laravel-generator-helpers": "^4.0",
+                "laravel/ui": "^3.0",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "InfyOm\\AdminLTEPreset\\AdminLTEPresetServiceProvider",
+                        "InfyOm\\AdminLTEPreset\\FortifyAdminLTEPresetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "InfyOm\\AdminLTEPreset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitul Golakiya",
+                    "email": "me@mitul.me"
+                }
+            ],
+            "description": "Laravel frontend preset for AdminLTE Theme",
+            "keywords": [
+                "AdminLTE",
+                "laravel",
+                "preset"
+            ],
+            "support": {
+                "issues": "https://github.com/InfyOmLabs/laravel-ui-adminlte/issues",
+                "source": "https://github.com/InfyOmLabs/laravel-ui-adminlte/tree/v4.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/infyomlabs",
+                    "type": "opencollective"
+                }
+            ],
+            "time": "2022-02-25T05:31:45+00:00"
+        },
+        {
+            "name": "jeroennoten/laravel-adminlte",
+            "version": "v3.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeroennoten/Laravel-AdminLTE.git",
+                "reference": "0043e3fc962a34f0e8debcf5806751c78e22cb60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeroennoten/Laravel-AdminLTE/zipball/0043e3fc962a34f0e8debcf5806751c78e22cb60",
+                "reference": "0043e3fc962a34f0e8debcf5806751c78e22cb60",
+                "shasum": ""
+            },
+            "require": {
+                "almasaeed2010/adminlte": "3.2.*",
+                "laravel/framework": ">=6.0",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": ">=4.0",
+                "phpunit/phpunit": ">=9.1",
+                "scrutinizer/ocular": "^1.9"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeroenNoten\\LaravelAdminLte\\AdminLteServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeroenNoten\\LaravelAdminLte\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen Noten",
+                    "email": "jeroennoten@me.com"
+                }
+            ],
+            "description": "Easy AdminLTE integration with Laravel",
+            "keywords": [
+                "AdminLTE",
+                "admin",
+                "administrator",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/jeroennoten/Laravel-AdminLTE/issues",
+                "source": "https://github.com/jeroennoten/Laravel-AdminLTE/tree/v3.8.2"
+            },
+            "time": "2022-05-18T14:12:47+00:00"
         },
         {
             "name": "laravel/fortify",

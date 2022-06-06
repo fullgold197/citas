@@ -72,7 +72,7 @@
                         <div class="form-group row mb-0" id="espacio" align="center">
 
                             <div class="col-md-8 offset-md-2" >
-                                <button type="button" class="btn btn-primary btn" data-bs-toggle="modal" data-bs-target="#modal-academico-create" style="background-color: rgb(61, 201, 48)">
+                                <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#xyz" style="background-color: rgb(61, 201, 48)">
                                     {{ __('Crear cuenta') }}
                                 </button>
                             </div>
@@ -88,7 +88,7 @@
                     </form>
                 </div>
             </div>
-            @include('auth.register')
+
 
             <div id="espacio" align="center">
             <div id="col-md-10">
@@ -110,7 +110,7 @@
 
     </div>
     </div>
-
+    @include('auth.register')
 @endsection
 
 

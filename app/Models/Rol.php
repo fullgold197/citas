@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rol extends Model
 {
-    use HasFactory;
+    public $table = "roles"; // hace referencia a la tabla cliente de la bd
+    public $primaryKey = "roles_id";
+    public $filiable = [
+        'nombre', 'created_at', 'updated_at'
+    ];
+    public $timestamps = false;
 }

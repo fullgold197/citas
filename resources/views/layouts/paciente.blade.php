@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="/css/admin_custom.css">
         <link rel="stylesheet" href="{{ asset('css/letras.css') }}">
     <!-- Imagen del title -->
-    <link rel="shortcut icon" href="{{asset('images/untels/untels.png')}}">
+    <link rel="shortcut icon" href="{{asset('images/minsa_icon.jpg')}}">
 
 
 </head>
@@ -56,12 +56,7 @@
 
 
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-       {{--   <a class="dropdown-item" href="#">
-        {{ __('Mi perfil') }}
-        </a>
-        <a class="dropdown-item" href="{{  url("/profile/password")}}">
-        {{ __('Cambiar contraseña') }}
-        </a>  --}}
+
 
         <a class="dropdown-item" href="{{ route('logout') }}"
         onclick="event.preventDefault();
@@ -89,15 +84,21 @@
             class="brand-link ">
 
 
-    <img src="{{ asset('images/untels/untels.png') }}"
-         alt="AdminLTE"
-         class="brand-image img-circle elevation-3"
-         style="opacity:.8">
+
 
 
     <span class="brand-text font-weight-light ">
-        <b>Egresados UNTELS</b>
+        <div id="" align="left"> 
+            <img src="{{asset('images/minsa.png')}}" class="img-fluid" width="180px" alt="minedu">
+        </div>
+        
     </span>
+    
+        <div id="" align="left"> 
+            RESERVA DE CITAS
+        </div>
+        
+    
 
 </a>
 
@@ -111,7 +112,7 @@
 <li class="nav-item ">
     <a class="{{ (request()->is('home')) ? 'nav-link active' : 'nav-link' }}"
        href="{{route('home')}}">
-        <i class="fas fa-fw fa-home "></i>
+        <i class="fas fa-home "></i>
         <p>Inicio</p>
     </a>
 </li>
@@ -121,23 +122,19 @@
 <li class="nav-item">
     <a class="{{ (request()->is('home/datos-personales')) ? 'nav-link active' : 'nav-link' }}"
         href="{{route('datos-personales.index')}}">
-        <i class="fas fa-fw fa-graduation-cap "></i>
-        <p>Datos personales</p>
+        <i class="fas fa-hospital-user"></i>
+        <p>Separar citas</p>
     </a>
 </li>
-
-
-
-
 
 
 <li  class="nav-item">
 
     <a
         class="{{ (request()->is('home/trayectoria-academica')) ? 'nav-link active' : 'nav-link' }}"
-       href="{{route('trayectoria-academica.index')}}">
-        <i class="fas fa-university"></i>
-        <p>Trayectoria académica</p>
+       href="{{-- {{route('trayectoria-academica.index')}} --}}">
+        <i class="fas fa-clock"></i>
+        <p>Próximas citas</p>
     </a>
 
 </li>
@@ -146,23 +143,6 @@
 
 
 
-<li  class="nav-item">
-    <a class="{{ (request()->is('home/trayectoria-profesional')) ? 'nav-link active' : 'nav-link' }}"
-
-       href="{{route('trayectoria-profesional.index')}}">
-        <i class="fas fa-user-tie"></i>
-        <p>Trayectoria profesional</p>
-    </a>
-</li>
-
-<li  class="nav-item">
-    <a class="{{ (request()->is('home/password')) ? 'nav-link active' : 'nav-link' }}"
-
-       href="{{route('password')}}">
-        <i class="fas fa-unlock-alt"></i>
-        <p>Mi contraseña</p>
-    </a>
-</li>
 
     </ul>
         </nav>

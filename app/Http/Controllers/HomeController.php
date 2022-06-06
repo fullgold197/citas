@@ -25,12 +25,12 @@ class HomeController extends Controller
     public function index()
     {
         /* return view('home'); */
-        if(Auth::user()->roles_id == '1') //1 = Admin Login
+        if(Auth::user()->role_id == '2') //1 = Admin Login
         {
             return redirect('/admin');
 
-        } else if (Auth::user()->roles_id == '0' and Auth::user()->estado =='1') {
-            return view('users.home');
+        } else if (Auth::user()->roles_id == '1' /* and Auth::user()->estado =='1' */) {
+            return view('users.dashboard_paciente');
         }
         else{
             return redirect('/login');

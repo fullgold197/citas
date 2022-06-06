@@ -8,6 +8,8 @@
         "php": "^8.0",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
+        "infyomlabs/laravel-ui-adminlte": "^4.0",
+        "jeroennoten/laravel-adminlte": "^3.8",
         "laravel/fortify": "^1.13",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
