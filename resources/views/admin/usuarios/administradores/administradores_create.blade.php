@@ -13,7 +13,7 @@
                     <div class="form-group">
                         <label for="name">Usuario</label>
                         <input type="text" class="form-control" id="name" name="name" value="{{ old('name')}}" required maxlength="20" >
-                        {{$errors->first('name')}}
+                        {{$errors->first('namesss')}}
                     </div>
                     <div class="form-group"
                         <label for="email">Correo electronico</label>
