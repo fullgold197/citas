@@ -47,7 +47,7 @@ return [
 
     'logo' => '<b>&nbsp</b>',
     'logo_img' => 'images/minsa.png',
-    'logo_img_class' => 'brand-image img-rounded elevation-3',
+    'logo_img_class' => 'brand-image img-fluid elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
     'logo_img_alt' => 'AdminLTE',

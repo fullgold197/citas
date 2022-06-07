@@ -121,7 +121,7 @@
 
 <li class="nav-item">
     <a class="{{ (request()->is('home/datos-personales')) ? 'nav-link active' : 'nav-link' }}"
-        href="{{route('datos-personales.index')}}">
+        href="{{-- {{route('datos-personales.index')}} --}}">
         <i class="fas fa-hospital-user"></i>
         <p>Separar citas</p>
     </a>

@@ -104,13 +104,13 @@
 
             </div>
 
-        </div>
+            </div>
 
 
 
     </div>
     </div>
-    @include('auth.register')
+    {{-- @include('auth.register') --}}
 @endsection
 
 
