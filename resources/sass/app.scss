@@ -1,7 +1,12 @@
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~admin-lte/build/scss/adminlte';
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-@import "node_modules/font-awesome/scss/font-awesome.scss";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//awesome
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
