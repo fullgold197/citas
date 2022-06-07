@@ -7,9 +7,9 @@ use Spatie\Permission\Models\Permission;
 Route::middleware(['auth', 'isAdmin'])->group(function () {
 
     Route::get('/admin', function () {
-        return view('admin.inicio.home');
+        /* return view('admin.inicio.home'); */
         //temporal
-        /* return view('admin.inicio.home_temporal'); */
+        return view('admin.inicio.home_temporal');
     });
 
     //Ruta para la vista de usuarios de egresados
