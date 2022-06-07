@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
-    'title_prefix' => '',
-    'title_postfix' => '',
+/*     'title' => 'AdminLTE 3', */
+/*     'title_prefix' => '',
+    'title_postfix' => '', */
 
     /*
     |--------------------------------------------------------------------------
@@ -45,12 +45,12 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
-    'logo_img_class' => 'brand-image img-circle elevation-3',
-    'logo_img_xl' => null,
+   /*  'logo' => '<b>Admin</b>LTE', */
+  /*   'logo_img' => 'images/minsa.png', */
+  /*   'logo_img_class' => 'brand-image img-circle elevation-3', */
+ /*    'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'AdminLTE',
+    'logo_img_alt' => 'AdminLTE', */
 
     /*
     |--------------------------------------------------------------------------
@@ -226,18 +226,18 @@ return [
 
     'menu' => [
         // Navbar items:
-        [
+       /*  [
             'type'         => 'navbar-search',
             'text'         => 'search',
             'topnav_right' => true,
-        ],
+        ], */
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
 
         // Sidebar items:
-        [
+        /* [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ],
@@ -253,8 +253,30 @@ return [
             'label'       => 4,
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'account_settings'], */
         [
+            'text' => 'Inicio',
+            'url'  => 'admin',
+            'icon' => 'fas fa-fw fa-home',
+        ],
+
+        [
+            'text' => 'Lista de citas',
+            'url'  => 'admin/egresado',
+            'icon' => 'fas fa-fw fa-file',
+        ],
+
+        [
+            'text' => 'Pacientes',
+            'url'  => 'admin/egresado',
+            'icon' => 'fas fa-fw fa-user-injured',
+        ],
+        [
+            'text' => 'Usuarios',
+            'url'  => 'admin/egresado',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        /* [
             'text' => 'profile',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
@@ -317,8 +339,8 @@ return [
             'text'       => 'information',
             'icon_color' => 'cyan',
             'url'        => '#',
-        ],
-    ],
+        ],*/
+    ], 
 
     /*
     |--------------------------------------------------------------------------

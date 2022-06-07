@@ -19,12 +19,25 @@ class UsersSeeder extends Seeder
         
         User::create(
             [
-                'email' =>'oevr1997@gmail.com',
+                'email' =>'cruzjean52@gmail.com',
                 'password' => bcrypt('12345678'),
                 'roles_id'=> '1',
     
             ]
+           
+            
             );
+        User::create(
+            [
+                'email' =>'oevr1997@gmail.com',
+                'password' => bcrypt('12345678'),
+                'roles_id'=> '2',
+    
+            ]
+           
+            
+            );
+
 
     }
 }

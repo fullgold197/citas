@@ -20,11 +20,11 @@ class RouteServiceProvider extends ServiceProvider
     //public const HOME = '/home';
     protected function authenticated()
     {
-        if(Auth::user()->role_as == '1') //1 = Admin Login
+        if(Auth::user()->roles_id == '1') //1 = Admin Login
         {
             return redirect('/admin')->with('status','Welcome to your dashboard');
         }
-        elseif(Auth::user()->role_as == '0') // Normal or Default User Login
+        elseif(Auth::user()->roles_id == '2') // Normal or Default User Login
         {
             return redirect('/home')->with('status','Logged in successfully');
         }

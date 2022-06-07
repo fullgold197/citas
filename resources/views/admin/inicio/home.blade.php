@@ -8,7 +8,7 @@
 
 @section('content')
 
-    <p>Bienvenido(a) {{Auth::user()->name}} al sistema web de seguimiento de egresados. Aqui podrás monitorear a los egresados con respecto a las maestrías y doctorados que hagan, así como los empleos que hagan en el transcurso de su profesión.</p>
+    <p>Bienvenido. Aquí podrás gestionar las citas de tu posta respectiva</p>
 
 @stop
 
