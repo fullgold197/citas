@@ -9,7 +9,7 @@
         <div class="col-md-4"  style="margin:70px;align=center">
             <div class="card">
                 <div class="card-header" >
-                    <div id="" align="left"> 
+                    <div id="" align="left">
                         <img src="{{asset('images/minsa.png')}}" class="img-fluid" width="180px" alt="minedu">
                     </div>
                     <div align="center">
@@ -67,12 +67,12 @@
                                 </button>
 
                             </div>
-                            
+
                         </div>
                         <div class="form-group row mb-0" id="espacio" align="center">
-                            
+
                             <div class="col-md-8 offset-md-2" >
-                                <button type="button" class="btn btn-primary btn" data-bs-toggle="modal" data-bs-target="#modal-academico-create" style="background-color: rgb(61, 201, 48)">
+                                <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#xyz" style="background-color: rgb(61, 201, 48)">
                                     {{ __('Crear cuenta') }}
                                 </button>
                             </div>
@@ -88,6 +88,7 @@
                     </form>
                 </div>
             </div>
+
 
             <div id="espacio" align="center">
             <div id="col-md-10">
@@ -109,7 +110,7 @@
 
     </div>
     </div>
-
+    @include('auth.register')
 @endsection
 
 
