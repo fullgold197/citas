@@ -22,7 +22,8 @@ return new class extends Migration
             $table->char('dni',8)->unique();
             $table->string('direccion',250);
             $table->integer('tel_fijo')->nullable();
-            $table->integer('celular')->nullable();
+            $table->integer('tel_movil');
+            $table->date('fecha_nacimiento');
             $table->enum('estado',['Habilitado','Deshabilitado']);
             $table->unsignedBigInteger('pacientes_id')->unique();
             $table->unsignedBigInteger('medicos_id')->unique();
