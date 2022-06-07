@@ -110,7 +110,7 @@
 
     </div>
     </div>
-    {{-- @include('auth.register') --}}
-@endsection
+{{--     @include('auth.register')
+ --}}@endsection
 
 
